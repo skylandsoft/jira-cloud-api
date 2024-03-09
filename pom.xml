@@ -27,7 +27,7 @@
 
 
   <properties>
-    <generated-source-output-folder>${project.build.directory}/generated-sources</generated-source-output-folder>
+    <generated-source-output-folder>${project.basedir}</generated-source-output-folder>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- JDK -->
@@ -77,7 +77,9 @@
 
               <!-- pass any necessary config options -->
               <configOptions>
+                <sourceFolder>src/main/java</sourceFolder>
                 <dateLibrary>java8</dateLibrary>
+                <java8>true</java8>
               </configOptions>
 
               <!-- override the default library to jersey2 -->
@@ -87,7 +89,6 @@
               <apiPackage>${project.groupId}.jiracloud.v3.api</apiPackage>
               <modelPackage>${project.groupId}.jiracloud.v3.model</modelPackage>
               <invokerPackage>${project.groupId}.jiracloud.v3</invokerPackage>
-              <cleanupOutput>true</cleanupOutput>
               <skipValidateSpec>true</skipValidateSpec>
               <generateAliasAsModel>true</generateAliasAsModel>
               <generateApiTests>false</generateApiTests>
