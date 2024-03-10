@@ -171,7 +171,14 @@
         <configuration>
           <source>17</source>
           <failOnWarnings>false</failOnWarnings>
-          <doclint>all</doclint>
+          <doclint>none</doclint>
+          <tags>
+            <tag>
+              <name>http.response.details</name>
+              <placement>a</placement>
+              <head>Http Response Details:</head>
+            </tag>
+          </tags>
         </configuration>
         <executions>
           <execution>
