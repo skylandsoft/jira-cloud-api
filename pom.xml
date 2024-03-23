@@ -4,7 +4,7 @@
 
   <groupId>com.skylandsoft</groupId>
   <artifactId>jira-cloud-api</artifactId>
-  <version>3.0.2</version>
+  <version>3.0.3</version>
   <packaging>jar</packaging>
   <name>jira-cloud-api</name>
 

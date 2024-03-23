@@ -19112,9 +19112,9 @@
           },
           "expirationDate": {
             "description": "The date after which the webhook is no longer sent. Use [Extend webhook life](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/#api-rest-api-3-webhook-refresh-put) to extend the date.",
-            "format": "int64",
+            "format": "date-time",
             "readOnly": true,
-            "type": "integer"
+            "type": "string"
           },
           "fieldIdsFilter": {
             "description": "A list of field IDs. When the issue changelog contains any of the fields, the webhook `jira:issue_updated` is sent. If this parameter is not present, the app is notified about all field updates.",
@@ -19225,9 +19225,9 @@
         "properties": {
           "expirationDate": {
             "description": "The expiration date of all the refreshed webhooks.",
-            "format": "int64",
+            "format": "date-time",
             "readOnly": true,
-            "type": "integer"
+            "type": "string"
           }
         },
         "required": [
