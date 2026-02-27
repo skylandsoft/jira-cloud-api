@@ -26560,17 +26560,25 @@
         "responses": {
           "200": {
             "content": {
-              "application/json": {
+              "application/octet-stream": {
                 "schema": {
-                  "items": {},
-                  "type": "array"
+                  "type": "string",
+                  "format": "binary"
                 }
               }
             },
             "description": "Returned if the request is successful when `redirect` is set to `false`."
           },
           "206": {
-            "description": "Returned if the request is successful when a `Range` header is provided and `redirect` is set to `false`."
+            "description": "Returned if the request is successful when a `Range` header is provided and `redirect` is set to `false`.",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
           },
           "303": {
             "description": "Returned if the request is successful. See the `Location` header for the download URL."
@@ -26746,10 +26754,10 @@
         "responses": {
           "200": {
             "content": {
-              "application/json": {
+              "application/octet-stream": {
                 "schema": {
-                  "items": {},
-                  "type": "array"
+                  "type": "string",
+                  "format": "binary"
                 }
               }
             },
